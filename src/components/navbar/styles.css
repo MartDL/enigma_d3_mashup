@@ -1,0 +1,8 @@
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-bottom: 7px solid turquoise;
+    height: 100px;
+}
