@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState, useCallback  } from 'react';
 import QlikContext from '../../context/QlikContext';
 import ObjectsContext from '../../context/ObjectsContext';
-import BarChart from '../d3/BarChart'
 
-// import ScatterPlot from '../d3/ScatterPlot'
+import BarChart from '../d3/BarChart';
+import ScatterPlot from '../d3/ScatterPlot';
 
 
 
@@ -64,6 +64,7 @@ const Chart = ({ objectId }) => {
     return (
       <div className="chartContainer">
         <BarChart data={data} />
+        <ScatterPlot data={data} />
       </div>
     )
 }

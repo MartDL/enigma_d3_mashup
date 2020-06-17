@@ -8,7 +8,8 @@ const AppRouter = () => {
     return (
         <div>
           <NavBar />  
-          <Chart objectId="fQdkG" />
+          {/* <Chart objectId="fQdkG" /> */}
+          <Chart objectId="PyQXKt" />
         </div>
     )
 }
