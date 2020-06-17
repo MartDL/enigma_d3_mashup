@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState, useCallback  } from 'react';
 import QlikContext from '../../context/QlikContext';
 import ObjectsContext from '../../context/ObjectsContext';
+import LineChart from '../d3/LineChart'
 
-import ScatterPlot from '../d3/ScatterPlot'
+// import ScatterPlot from '../d3/ScatterPlot'
+
 
 
 
@@ -50,20 +52,20 @@ const Chart = ({ objectId }) => {
             if(objectId) {
                 getObject(objectId).then(model => {
                     setModel(model)
-                    console.log('new model', model)
                     updateLayout(model).then(layout => {
-                        console.log('layout', layout)
+  
                     })
                 })
             }
         }
-    })
-    return model ?
-      <div>
-        {/* <ScatterPlot data={model} /> */}
+    }, [])
+
+
+    return (
+      <div className="chartContainer">
+        <LineChart data={data} />
       </div>
-      : null
-    
+    )
 }
 
 export default Chart;

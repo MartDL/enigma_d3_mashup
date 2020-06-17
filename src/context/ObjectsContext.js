@@ -47,7 +47,7 @@ const ObjectsProvider = ({ children }) => {
             while (!layout) {
               try {
                 layout = await model.getLayout()
-                console.log('layout', layout)
+                // console.log('layout', layout)
               } catch (err) {
                throw new Error ('unable to find this layout')
               }

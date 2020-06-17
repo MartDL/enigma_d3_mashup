@@ -1,0 +1,13 @@
+svg {
+    margin: 10px 10px;
+    background-color: #282c34;
+}
+
+rect {
+    fill: turquoise;
+}
+
+text {
+    font-size: 1.1em;
+    color: whitesmoke;
+}
