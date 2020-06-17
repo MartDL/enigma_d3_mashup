@@ -1,5 +1,5 @@
 svg {
-    margin: 10px 10px;
+    margin: 50px 10px;
     background-color: #282c34;
 }
 
@@ -8,6 +8,26 @@ rect {
 }
 
 text {
-    font-size: 1.1em;
-    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.tick text {
+    font-size: 0.8em;
+    fill : whitesmoke;
+}
+
+.tick line {
+    stroke: rgb(71, 70, 70);
+}
+
+.chartTitle {
+    font-family: unset;
+    font-size: 1.3em;
+    fill: grey;
+
+}
+
+.bottomAxisLabel {
+    font-size: 1.5em;
+    fill: grey;
 }
